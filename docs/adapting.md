@@ -2,7 +2,8 @@
 
 > These files are published for reference, not under an open-source license (see the repository [LICENSE](../LICENSE)). The *approach* below is free to take — that is why this guide exists. To reuse the agent files themselves, open an Issue and ask.
 
-The agents here are saturated with one app's specifics — hex values, book titles, fade stages, a service worker's cache key. **Do not strip that out and keep the shell.** The specificity is what makes them work; a generic "accessibility reviewer" produces findings you could have gotten from a linter.
+The agents here were built for [Fade Readers](https://github.com/angspos/fade-readers), an
+early-reading app, and are saturated with that one app's specifics — hex values, book titles, fade stages, a service worker's cache key. **Do not strip that out and keep the shell.** The specificity is what makes them work; a generic "accessibility reviewer" produces findings you could have gotten from a linter.
 
 Port the *structure*, then re-saturate it with your project's specifics.
 

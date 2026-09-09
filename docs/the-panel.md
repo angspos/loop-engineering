@@ -6,7 +6,13 @@
 
 Nine expert-persona review subagents for [Claude Code](https://claude.com/claude-code), plus a `/panel` command that runs them in parallel and merges their findings into one ranked report.
 
-They review this app. See [fade-readers](https://github.com/angspos/fade-readers) for what the app is.
+They review **[Fade Readers](https://fadereaders.com)** — an early-reading web app where children
+read real books before they know letter sounds, each letter drawn as the thing it starts with,
+the pictures fading to plain ink as the child reads. The panel exists because that app carries
+more hard rules than one person can re-check on every iteration: a unique color per letter, a
+footprint nothing may escape, sounds and never letter names, one typeface, a contrast floor at
+every fade stage, and no rewards or streaks anywhere.
+([the app's repository](https://github.com/angspos/fade-readers))
 
 **This is the real working system, not a template.** The agents carry that app's actual thresholds, hex values, and settled decisions. That specificity is the point — a reviewer told "check accessibility" produces noise, and a reviewer told "the whisper scenes are pale on purpose, never file that as a contrast failure" produces signal. [`adapting.md`](adapting.md) covers lifting it to a different project.
 

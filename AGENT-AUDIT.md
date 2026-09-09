@@ -1,5 +1,9 @@
 # Auditing the agents themselves
 
+> The panel being audited here is the one that reviews
+> [Fade Readers](https://github.com/angspos/fade-readers), an early-reading app for children.
+> Context for why any of this exists is in [the main README](README.md).
+
 2026-09-08. Twelve files checked mechanically against the current build and spec, repaired, then
 probed live. **Eleven findings, all fixed, no agent rebuilt** — every defect was drift from a spec
 that moved underneath them.
