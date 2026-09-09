@@ -1,0 +1,20 @@
+Copyright © 2026 Angela Sposato. All rights reserved.
+
+This repository documents the review-panel architecture and loop-engineering
+method built for Fade Readers. The agent definitions, the linter, the
+documents, the diagrams, and the selection, coordination and arrangement of
+that material are proprietary. No license is granted to use, copy, modify,
+distribute, or create derivative works from them, in whole or in part,
+without prior written permission from the copyright holder.
+
+This repository is published for reference and portfolio purposes only.
+
+The *approach* described here — the deterministic gate, the role split, the
+autonomy dial, the ladder — is offered freely as an idea. Reusing the files
+themselves is not. If you want to, open an Issue and ask.
+
+Quotations from Andrej Karpathy, Andrew Ng, Cognition and LangChain remain
+the property of their authors and are used, with attribution and links, for
+commentary and criticism.
+
+Contact: support@fadereaders.com

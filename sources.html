@@ -1,0 +1,176 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+  @page { size: letter; margin: 0.8in 0.85in; }
+  :root { --ink:#16191C; --muted:#5C6660; --rule:#D3D7CF; --slate:#3B5F6B; --ochre:#9A6624; --moss:#456A41; --alarm:#96402F; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Source Serif 4",Georgia,serif; font-size:10.5pt; line-height:1.5; color:var(--ink); }
+  h1 { font-family:"Bricolage Grotesque",sans-serif; font-size:24pt; line-height:1.05; margin:0 0 6pt; letter-spacing:-0.01em; }
+  h2 { font-family:"Bricolage Grotesque",sans-serif; font-size:13pt; margin:0 0 3pt; }
+  .eyebrow { font-family:"JetBrains Mono",monospace; font-size:7.5pt; letter-spacing:.14em; text-transform:uppercase; color:var(--slate); }
+  .lede { color:var(--muted); font-size:11pt; margin:0 0 4pt; max-width:52em; }
+  header { border-bottom:2px solid var(--ink); padding-bottom:10pt; margin-bottom:16pt; }
+
+  .work { break-inside:avoid; margin-bottom:15pt; padding-bottom:13pt; border-bottom:1px solid var(--rule); }
+  .work:last-of-type { border-bottom:none; }
+  .meta { font-family:"JetBrains Mono",monospace; font-size:8pt; color:var(--muted); line-height:1.55; margin:2pt 0 9pt; }
+  .meta a { color:var(--slate); word-break:break-all; }
+  .tag { font-family:"JetBrains Mono",monospace; font-size:6.5pt; letter-spacing:.1em; text-transform:uppercase; border:1px solid var(--rule); padding:1px 5px; margin-left:5px; vertical-align:1.5px; color:var(--muted); }
+
+  .q { display:grid; grid-template-columns: 1fr 148px; gap:14px; padding:7pt 0; border-top:1px dotted var(--rule); break-inside:avoid; }
+  .q:first-of-type { border-top:none; }
+  .q blockquote { margin:0; font-size:10.5pt; line-height:1.45; }
+  .q .use { font-family:"JetBrains Mono",monospace; font-size:7.5pt; line-height:1.5; color:var(--muted); border-left:2px solid var(--slate); padding-left:8px; }
+  .q .use b { display:block; color:var(--slate); font-size:6.5pt; letter-spacing:.1em; text-transform:uppercase; margin-bottom:2px; }
+
+  .nums { font-family:"JetBrains Mono",monospace; font-size:9pt; background:#EFF2EE; border:1px solid var(--rule); padding:8pt 11pt; margin:7pt 0 0; line-height:1.8; }
+  .nums b { color:var(--moss); }
+  .nums s { color:var(--alarm); text-decoration:none; }
+
+  .box { break-inside:avoid; border:1px solid var(--rule); border-left:3px solid var(--ochre); padding:10pt 13pt; margin-top:14pt; }
+  .box.warn { border-left-color:var(--alarm); }
+  .box h3 { font-family:"Bricolage Grotesque",sans-serif; font-size:10.5pt; margin:0 0 4pt; }
+  .box p { margin:0 0 5pt; font-size:9.5pt; line-height:1.45; }
+  .box p:last-child { margin:0; }
+  .box .label { font-family:"JetBrains Mono",monospace; font-size:6.5pt; letter-spacing:.11em; text-transform:uppercase; color:var(--ochre); font-weight:600; display:block; margin-bottom:3pt; }
+  .box.warn .label { color:var(--alarm); }
+
+  footer { margin-top:18pt; padding-top:9pt; border-top:1px solid var(--rule); font-family:"JetBrains Mono",monospace; font-size:7.5pt; color:var(--muted); line-height:1.6; }
+</style></head>
+<body>
+
+<header>
+  <div class="eyebrow">Fade Readers · Panel Loop</div>
+  <h1>Sources</h1>
+  <p class="lede">Every claim the panel-loop spec borrows, traced to the sentence it came from. Quotes are verbatim. The right-hand column says where each one is used in the design.</p>
+</header>
+
+<div class="work">
+  <h2>Andrej Karpathy — <em>Software Is Changing (Again)</em></h2>
+  <div class="meta">Y Combinator AI Startup School · June 2025 · full transcript<span class="tag">primary</span><br>
+  <a href="https://singjupost.com/andrej-karpathy-software-is-changing-again/">singjupost.com/andrej-karpathy-software-is-changing-again</a><br>
+  written summary: <a href="https://www.latent.space/p/s3">latent.space/p/s3</a></div>
+
+  <div class="q">
+    <blockquote>"Usually they are doing the generation, and we as humans are doing the verification. <strong>It is in our interest to make this loop go as fast as possible.</strong>"</blockquote>
+    <div class="use"><b>used for</b>The whole premise — verification is the constraint, not generation quality.</div>
+  </div>
+  <div class="q">
+    <blockquote>"You are in charge of the autonomy slider… depending on the complexity of the task at hand, you can tune the amount of autonomy."</blockquote>
+    <div class="use"><b>used for</b>The opening slider diagram, and dialling autonomy per seat.</div>
+  </div>
+  <div class="q">
+    <blockquote>"I'm always scared to get way too big diffs. <strong>I always go in small incremental chunks.</strong>" — on "how we keep AI on the leash"</blockquote>
+    <div class="use"><b>used for</b>One decision per run. Batch size bounded by what you can check.</div>
+  </div>
+  <div class="q">
+    <blockquote>"A GUI utilizes your <strong>computer vision GPU in all of our head. Reading text is effortful.</strong>"</blockquote>
+    <div class="use"><b>used for</b>Step 4 — the visual verification surface.</div>
+  </div>
+  <div class="q">
+    <blockquote>"[A] GUI allows a human to <strong>audit the work of these fallible systems and to go faster</strong>." · "It's much easier to just see a diff as, like, red and green change."</blockquote>
+    <div class="use"><b>used for</b>Before/after book pages with findings pinned, instead of a memo.</div>
+  </div>
+  <div class="q">
+    <blockquote>"[A] new category of consumer and manipulator of digital information. <strong>It used to be just humans through GUIs or computers through APIs. And now we have a completely new thing… agents.</strong>"</blockquote>
+    <div class="use"><b>used for</b><code>letters.json</code> — the build manifest panelists cite instead of inferring from CSS.</div>
+  </div>
+</div>
+
+<div class="work">
+  <h2>Andrew Ng — <em>Agentic Design Patterns, Part 1</em></h2>
+  <div class="meta">The Batch · 20 March 2024<span class="tag">primary</span><br>
+  <a href="https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance">deeplearning.ai/the-batch/how-agents-can-improve-llm-performance</a></div>
+
+  <div class="q">
+    <blockquote><strong>Reflection:</strong> "The LLM examines its own work to come up with ways to improve it."</blockquote>
+    <div class="use"><b>used for</b>The Critic role — your five seats.</div>
+  </div>
+  <div class="q">
+    <blockquote><strong>Multi-agent collaboration:</strong> "More than one AI agent work together, splitting up tasks and discussing and debating ideas."</blockquote>
+    <div class="use"><b>used for</b>Round 2 — the rebuttal round.</div>
+  </div>
+
+  <div class="nums">HumanEval, coding tasks<br>
+    GPT-3.5 zero-shot &nbsp;………&nbsp; 48.1%<br>
+    GPT-4 zero-shot &nbsp;…………&nbsp; <s>67.0%</s><br>
+    GPT-3.5 + agentic workflow &nbsp;…&nbsp; <b>up to 95.1%</b><br>
+    <span style="color:#5C6660">→ the workflow beat the model upgrade</span>
+  </div>
+</div>
+
+<div class="work">
+  <h2>Andrew Ng — letter on degrees of agency</h2>
+  <div class="meta">The Batch, issue 253 · 12 June 2024<span class="tag">primary</span><br>
+  <a href="https://www.deeplearning.ai/the-batch/issue-253/">deeplearning.ai/the-batch/issue-253</a></div>
+
+  <div class="q">
+    <blockquote>"Rather than arguing over which work to include or exclude as being a true agent, we can acknowledge that <strong>there are different degrees to which systems can be agentic</strong>."</blockquote>
+    <div class="use"><b>used for</b>The autonomy dial — LOW / MEDIUM / HIGH per seat, rather than one setting for all five.</div>
+  </div>
+  <div class="q">
+    <blockquote>There is "a gray zone between what clearly is not an agent (prompting a model once) and what clearly is (say, an autonomous agent that, given high-level instructions, plans, uses tools, and carries out multiple, iterative steps of processing)."</blockquote>
+    <div class="use"><b>used for</b>LEARN and CHILD sit near the "prompt once" end on purpose.</div>
+  </div>
+</div>
+
+<div class="work">
+  <h2>Andrew Ng — <em>Evals and Error Analysis, Part 1</em></h2>
+  <div class="meta">The Batch · 15 October 2025<span class="tag">primary</span><br>
+  <a href="https://www.deeplearning.ai/the-batch/improve-agentic-performance-with-evals-and-error-analysis-part-1">deeplearning.ai/the-batch/improve-agentic-performance-with-evals-and-error-analysis-part-1</a></div>
+
+  <div class="q">
+    <blockquote>The "<strong>single biggest predictor of how rapidly a team makes progress building an AI agent</strong>" is its "ability to drive a disciplined process for evals… and error analysis."</blockquote>
+    <div class="use"><b>used for</b>Rung 3 — the decision log, and why it can't be skipped.</div>
+  </div>
+  <div class="q">
+    <blockquote>"Quickly build a prototype, then <strong>manually examine a handful of agent outputs</strong> to see where it performs well and where it stumbles" — then build "datasets and error metrics — sometimes objective metrics implemented in code, and sometimes subjective metrics using LLM-as-judge."</blockquote>
+    <div class="use"><b>used for</b>The eval timeline: log → count by hand → fix → only then LLM-as-judge.</div>
+  </div>
+</div>
+
+<div class="work">
+  <h2>Cognition — <em>Don't Build Multi-Agents</em></h2>
+  <div class="meta">Walden Yan, Cognition<span class="tag">primary</span> · the counter-argument this design has to survive<br>
+  <a href="https://cognition.com/blog/dont-build-multi-agents">cognition.com/blog/dont-build-multi-agents</a></div>
+
+  <div class="q">
+    <blockquote><strong>Principle 1.</strong> "Share context, and share full agent traces, not just individual messages."</blockquote>
+    <div class="use"><b>used for</b>Round 2 shares whole traces, not my summary of them.</div>
+  </div>
+  <div class="q">
+    <blockquote><strong>Principle 2.</strong> "Actions carry implicit decisions, and conflicting decisions carry bad results."</blockquote>
+    <div class="use"><b>used for</b>The hard boundary: the panel reviews in parallel, the build is edited by one thread.</div>
+  </div>
+</div>
+
+<div class="work">
+  <h2>LangChain — <em>How and when to build multi-agent systems</em></h2>
+  <div class="meta"><a href="https://www.langchain.com/blog/how-and-when-to-build-multi-agent-systems">langchain.com/blog/how-and-when-to-build-multi-agent-systems</a></div>
+  <div class="q">
+    <blockquote>Read-heavy work parallelises cleanly; write-heavy work collides. Anthropic's own research system delegates the synthesis writing back to a single main agent.</blockquote>
+    <div class="use"><b>used for</b>Why a review panel is safe where parallel editing is not.</div>
+  </div>
+</div>
+
+<div class="box warn">
+  <span class="label">Correction — 8 Sept 2026</span>
+  <h3>A number I got wrong the first time</h3>
+  <p>An earlier draft said Ng's reflection split moved GPT-4 from roughly <strong>67% to 88%</strong> on HumanEval. That came from a secondary blog post and <strong>does not appear in Ng's writing.</strong> The figures above are his, from The Batch, 20 March 2024.</p>
+  <p>Two things to keep straight about them: the 95.1% is for <em>agentic workflows in general</em>, not for the Critic/Reviser split measured on its own — and it is a coding benchmark, not evidence about review panels. Cite it for the claim Ng actually makes: the workflow mattered more than the model upgrade.</p>
+</div>
+
+<div class="box">
+  <span class="label">Not from any of them</span>
+  <h3>What this project invented</h3>
+  <p>The five seats and their dials · the context packet and what it withholds · the triage split where verifiable findings skip the debate · the Actor / Critic / Reviser <em>naming</em> (Ng names the pattern <strong>Reflection</strong> and describes a separate critic; the three-role decomposition is the pattern literature's) · "confident garbage" as a phrase · the visual surface design · the five-rung ladder · <code>fr-lint.js</code> and every Fade Readers rule it checks.</p>
+  <p>These are argued from the sources above. They are not endorsed by them.</p>
+</div>
+
+<footer>
+  Companion to the Panel Loop spec · claude.ai/code/artifact/45f6a08f-5ba0-49ea-9d40-ea4e712d7649<br>
+  Compiled 8 September 2026 · quotes verbatim from the linked sources
+</footer>
+
+</body></html>
